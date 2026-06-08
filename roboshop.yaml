@@ -1,6 +1,7 @@
 
 - name: install packages
-  hosts: web
+  hosts: local
+  connection: local
   become: yes
   vars:
     COURSE: "DevOps with AWS"
